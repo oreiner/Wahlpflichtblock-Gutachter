@@ -1,0 +1,228 @@
+/* Site Colors:
+  #1A446C - blue grey
+  #689DC1 - light blue
+  #D4E6F4 - very light blue
+  #EEE4B9 - light tan
+  #8D0D19 - burgundy
+  
+  Uni-Koeln colors
+  #32475B - darker blue
+  #3E566C - lighter bluie
+  #FFFFFF - white
+*/
+
+html {  width: 100%; height: 100%;}
+body {
+  width: 100%; height: 100%; 
+  margin: 0; padding: 0; border: 0;
+  font-family: Verdana, Arial, Helvetica, sans-serif; 
+  font-size: 13px; line-height: 15px;
+  background: #FFFFFF;
+  overflow: auto;
+}
+img { border: none; }
+a { color: #32475B; }
+a:hover { color: #1A446C; }
+
+/*	
+#Walphisch{
+    background: #1A446C;
+}	*/
+	
+#header { 
+	height: 10%; 
+	margin: 0; padding: 0; text-align: left; 
+  background: #1A446C; color: #FFFFFF;
+}
+#header h1 { padding: 1em; margin: 0; }
+#main { 
+	width: 100%; height: 85%;
+	margin: 0; padding: 0; 
+	background: #FFFFFF;
+}
+#footer { 
+	clear: both;
+	height: 5%; margin: 0; padding: 0; 
+	text-align: center; 
+  background: #1A446C;  color: #FFFFFF;
+}
+#footer small { line-height:2em ; margin: 0;}
+
+/* Navigation */
+#navigation { 
+	float: left; overflow: auto; 
+	z-index: 1; position: fixed;
+	width: 20%; height: 85%; 
+	margin: 0; padding: 0 2em; 
+	color: #FFFFFF; background: #32475B;
+}
+#navigation a { color: #FFFFFF; text-decoration: none; }
+#navigation a:hover { color: #47f5ff; }
+ul.subjects { 
+	margin: 1em 0; padding-left: 0; list-style: circle; 
+}
+ul.courses { 
+	margin: 0; padding-left: 2em; list-style: square; font-weight: normal;
+}
+ul.comments { padding-left: 2em; list-style: square; font-weight: normal; }
+.selected { font-weight: bold; }
+
+/* Page Content */
+#page { 
+	float:left; overflow: auto;
+	width: 75%;
+	margin-left: 25%; height: 100%; 
+	padding-left: 0em; vertical-align: top; 
+	background: #FFFFFF;
+}
+#page h1 { color: black; margin-top: 1em; line-height: 1em}
+#page h2 { color: #32475B; margin-top: 1em;}
+#page h3 { color: #32475B; }
+#page h4 { color: #3A2A24; }
+#page form { color: #32475B; }
+#page p { color: #32475B; }
+.view-content {
+	margin: 1em; padding: 1em; border: 1px solid #999;
+}
+
+div.message { 
+	border: 2px solid #32475B;
+	color: #32475B; font-weight: bold;
+	margin: 1em 0 ; padding: 1em; 
+}
+
+#comment_field, #grade_bar, #submit_comment {
+    display:none;
+}
+#comment_field_checkbox:checked + #comment_field, #grade_bar_checkbox:checked + #grade_bar, 
+#comment_field_checkbox:checked ~ #submit_comment, #grade_bar_checkbox:checked ~ #submit_comment  {
+    display:block;
+}
+
+table.sortable, table.sortable td, table.sortable tr{
+color: #32475B;
+margin: 1em 0 ; padding: 1em;
+border: 2px solid #32475B;
+border-collapse: collapse;
+font-weight: normal;
+text-align: center;
+}
+table.sortable th{
+color: #32475B;
+margin: 1em 0 ; padding: 1em;
+border: 2px solid #32475B;
+border-collapse: collapse;
+font-weight: bold;
+text-align: center;
+}
+
+table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after { 
+    content: " \25B4\25BE";
+ font-weight: normal;
+}
+
+#searchTableInput {
+border: 1px solid #32475B;
+padding: 0.5em;
+box-sizing: border-box;
+border-radius: 4px;
+}
+#searchTableInput[type=text]:focus {
+    background-color: lightblue;
+}
+
+table.reports_table, table.reports_table tr,  table.reports_table td   {
+	border-collapse: collapse;
+	border: 2px solid #32475B;
+	color: #32475B; font-weight: normal;
+	max-width: 95%; margin: 1em 0 ; padding: 0.5em;
+	text-align: left; 
+
+}
+table.reports_table th   {
+	font-weight: bold; border: 2px solid #32475B; text-align: center; 
+
+
+}
+th.thin {
+	/*I want content to have a larger column whilst keeping all the columns in screen. for some reason I cant get it to work...*/
+}
+
+th.thick {
+
+}
+
+.new_comment_form{
+	margin: 1em 0em ; padding: 1em;
+	width: 650px;
+	text-align: left;
+}
+
+table.comments_table, td.text{
+	border: 1px solid #32475B; 
+	color: #32475B; font-weight: bold;
+	margin: 1em 0 ; padding: 1em;
+	width: 650px;
+	text-align: left;
+}
+
+td.klips_text {
+	border: 4px solid #32CD32; font-weight: bold;
+	margin: 1em 0 ; padding: 1em;
+	width: 650px;
+	text-align: left;
+}
+
+table.comments_table, td.missbrauch {
+	border: 0; text-align: right;
+	background-color: #FFFFFF;
+	color: #32475B; font-weight: bold;
+	margin: 0em 0 ; padding-top: 0; padding-bottom: 2em;
+	width: 650px;
+}
+
+button.missbrauch_button {
+	border: 0; text-align: right;
+	background-color: #FFFFFF;
+	text-decoration: underline;
+	color: #32475B; font-weight: bold;
+	margin: 0em 0 ; padding-top: 0; padding-bottom: 1em;
+	width: 650px;
+}
+
+table.grades_table, table.grades_table th, table.grades_table tr, table.grades_table td{
+	border: 2px solid #32475B;
+	color: #32475B; font-weight: bold;
+	margin: 1em 0 ; padding: 1em;
+	text-align: center;
+}
+
+img.grade{
+	display: block;
+    margin: auto;
+	width: 50%;
+	max-width: 50%;
+    height: auto;
+}
+/* manage content input fields */
+input.grade{
+	width: 25px;
+}
+
+input.votes{
+	width: 15px;
+}
+
+input.name{
+	width: 70%;
+}
+input.course_id{
+	
+}
+
+/* errors */
+.error {
+	color: #32475B; border: 2px solid #32475B;
+	margin: 1em 0; padding: 1em;
+}
+.error ul { padding-left: 2em; }
