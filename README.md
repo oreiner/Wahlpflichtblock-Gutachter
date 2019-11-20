@@ -7,20 +7,22 @@ Die Seite erlaubt die hierarchische Zuordnung von einzelne Themen (Kurse) in Cat
 
 ## Einstellung:
 
-leider gibt es noch kein config Datei, das heißt die einzelne Dateien sind zu finden und anpassen:
+leider gibt es noch kein config Datei, das heißt man muss die einzelne Dateien finden und anpassen:
 
 ### Server interpertation von URLs
 /.htaccess muss je nach Hosting angepasst werden 
 
 ### Backend
-1.
-/includes/db_connection
-database server, user, password, name
 
-2. Datenbank erstenn
->vorlage_WPB.sql in phpmyadmin importieneren
+1. Datenbank erstellen
+>vorlage_WPB.sql in phpmyadmin importieren
+
+2. Einstellung von database server, user, password, name
+>/includes/db_connection
 
 ### Frontend
-/public/index.php
-E-Mail-Adresse
-Text etc.
+Inhalte anpassen: E-Mail-Adresse, Text etc.
+>/public/index.php
+
+*Der Admin-Frontend ist leider noch nicht zur neuen Version der Seite angepasst, d.h. man muss Kurse (neue hinzufügen) vom phpmyadmin verwalten.  
+Freigeben von Kommentare klappt. 
