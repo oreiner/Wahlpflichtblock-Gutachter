@@ -26,3 +26,9 @@ Inhalte anpassen: E-Mail-Adresse, Text etc.
 
 *Der Admin-Frontend ist leider noch nicht zur neuen Version der Seite angepasst, d.h. man muss Kurse (neue hinzufügen) vom phpmyadmin verwalten.  
 Freigeben von Kommentare klappt. 
+
+## Beispiel-Seite
+
+http://demowpbgutachter.000webhost.com/  
+Admin-Seite findet ihr unter  
+http://demowpbgutachter.000webhost.com/manage_content.php  
